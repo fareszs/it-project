@@ -15,7 +15,27 @@
             <input   id="search"type="search" placeholder="Search for products..."><button  for="search">search</button>                  <a class="signin" href="">sign in</a><a  class="signup"href="">sign up</a><a class="card"href="">my card</a>    
         
         </nav><BR>
+        <nav>
+        <img id slider src="images/slider.jpg" alt="changble image" width="100%" height="300px">
+                <script>
+                        var images = ["images/slider.jpg", "images/slider2.jpg", "images/slider3.jpg"];
+                        var currentIndex = 0;
+                        var slider = document.getElementById("slider");
+
+                        function changeImage() {
+                            currentIndex = (currentIndex + 1) % images.length;
+                            slider.src = images[currentIndex];
+                        }
+
+                        setInterval(changeImage, 5000);
+                        
+                         // Change image every 5 seconds
+                </script>
         
+        
+        
+        
+        </nav>
         <nav class="navbar">
             
             <a href="#electronics">Electronics</a>
