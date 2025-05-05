@@ -15,21 +15,29 @@
             <input   id="search"type="search" placeholder="Search for products..."><button  for="search">search</button>                  <a class="signin" href="">sign in</a><a  class="signup"href="">sign up</a><a class="card"href="">my card</a>    
         
         </nav><BR>
-        <nav>
-        <img id =" slider" src="imges_main/1.jpeg" alt="changble image" width="100%" height="200px">
+        
+        <img id ="slider" src="imges_main/1.jpeg" alt="changble image" width="100%">
                         <script>
-                            const images = ["imges_main/11.jpeg","imges_main/12.jpeg","imges_main/13.jpe","imges_main/14.png","imges_main/1.jpeg","imges_main/2.jpg","imges_main/3.jpeg","imges_main/4.jpeg","imges_main/5.jpeg","imges_main/6.jpeg","imges_main/7.jpeg","imges_main/8.jpeg","imges_main/9.jpeg","imges_main/10.jpeg"];
-                            let index = 0;
-                            setInterval(function() {
-                            insex = (index + 1) % images.length;
-                            document.getElementById("slider").src = images[index];}, 5000);
-                        
+let images = [
+"imges_main/11.jpeg", "imges_main/12.jpeg", 
+"imges_main/1.jpeg", "imges_main/3.jpeg", "imges_main/4.jpeg",
+"imges_main/5.jpeg", "imges_main/6.jpeg", "imges_main/7.jpeg", "imges_main/8.jpeg",
+"imges_main/9.jpeg", "imges_main/10.jpeg"
+];
+
+let index = 0;
+
+setInterval(function() {
+index = (index + 1) % images.length;
+document.getElementById("slider").src = images[index];
+}, 5000);
+
                         </script>
         
         
         
         
-        </nav>
+        
         <nav class="navbar">
             
             <a href="#electronics">Electronics</a>
