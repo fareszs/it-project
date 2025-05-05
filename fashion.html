@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" >
+
+
+    <style>
+        /* === رأس الصفحة === */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+
+.store{
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rgb(225, 235, 235);
+ 
+
+}
+
+.store .contant{
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgb(29, 4, 48);
+
+    /* display: flex;
+    justify-content:space-around;
+    align-items: center; */
+
+}
+
+
+.store .contant .image{
+    width: 100%;
+    /* border: 15px rgb(223, 229, 232) solid;
+    border-radius: 20%; */
+    height: 85vh;
+
+
+}
+
+ .paragraph1{
+
+        position: relative;
+        bottom: 500px;
+        padding-left: 5px;
+        width: 500px;
+        color: wheat;
+        text-shadow: 5px 5px 5px rgba(3, 54, 222, 0.798);
+
+        font-size: 20px;
+        font-weight: 600;
+
+
+        position:relative;
+        left: 50px; 
+}
+
+.store .contant .paragraph2{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 5px;
+    border: 10px rgb(0, 251, 255) solid;
+    border-radius: 30px;
+    background-color: rgb(0, 251, 255);
+    padding: 10px;
+
+
+    position:absolute;
+    bottom: 100px;
+    left: 20px;
+
+
+
+}
+
+
+.products{
+    width: 95%;
+    margin: 0rem 50rem;
+    /* margin-left: 80rem;
+    margin-right: 80rem; */
+    
+    background-color: rgb(151, 235, 217);
+  
+    margin: auto;
+    /* display: flex; */
+   height: auto;
+   /* displa:flex; */
+   object-fit: cover;
+
+
+ transition: transform 0.3s, box-shadow 0.3s;
+ color: white;
+
+
+}
+
+
+.products .winter-clothes:hover{
+    background-color: rgba(54, 57, 57, 0.952);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.products .shirt:hover{
+    background-color: rgba(83, 86, 87, 0.842);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.products .summmer-T-shirts:hover{
+    background-color: rgba(209, 212, 213, 0.455);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+
+.products .address{
+  text-align: center;
+}
+
+
+.winter-clothes{
+    width: 400px;
+    height: 600px;
+    background-color: rgba(64, 179, 179, 0.969);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    text-align: center;
+    display: inline-block;
+
+}
+
+.winter-clothes .ima1{
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    
+}
+
+.winter-clothes .pa1{
+    font-size: 28px;
+    font-weight: 900;
+    text-transform:capitalize;
+    word-spacing: 3px;
+    background-color: hsla(0, 20%, 52%, 0.3);
+    width: 200px;
+    margin: auto;
+    border-radius: 10px ;
+    color: antiquewhite;
+    margin-bottom: 25px;
+
+    height: 40px;
+    padding-top: 5px;
+}
+
+
+
+.winter-clothes .pound{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform:capitalize;
+    word-spacing: 5px;
+    background-color: hsla(0, 20%, 52%, 0.3);
+    width: 200px;
+    height: 40px;
+    padding-top: 8px;
+    margin: auto;
+    border-radius: 10px ;
+    color:antiquewhite;
+    margin-bottom: 30px;
+}
+
+
+.winter-clothes .add-to-cart{
+    background-color: hsla(0, 20%, 52%, 0.3);
+    color:antiquewhite;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.winter-clothes .add-to-cart:hover,
+.shirt .add-to-cart2:hover,
+.summmer-T-shirts .add-to-cart3:hover {
+
+    background-color: rgb(4, 59, 79);
+}
+.winter-clothes .add-to-cart:active,
+.shirt .add-to-cart2:active,
+.summmer-T-shirts .add-to-cart3:active {
+    color: red;
+}
+
+
+.shirt{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(4, 138, 100);
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.shirt .image-shirt{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* border:20px solid #eee; */
+    /* border-radius: 15px; */
+    
+    height: 400px;
+    object-fit:cover ;
+
+
+}
+
+.shirt .pa2{
+    font-size: 30px;
+    font-weight: 900;
+    word-spacing: 5px;
+    text-transform:capitalize;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: cadetblue;
+    border-radius: 12px;
+    color:white;
+    position: relative;
+    bottom: 10px;
+}
+.shirt .pound2{
+    font-size: 30px;
+    font-weight: 900;
+    word-spacing: 5px;
+    text-transform:capitalize;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: cadetblue;
+    border-radius: 12px;
+    color:white;
+}
+
+.shirt .add-to-cart2{
+    background-color: cadetblue;
+    color:white;
+    width: 150px;
+    height: 30px;
+   
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 30px;
+   
+
+}
+
+
+
+
+.summmer-T-shirts{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.summmer-T-shirts .image-summmer-T-shirts{
+    width: 100%;
+   
+  
+}
+
+.summmer-T-shirts .pa3{
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.summmer-T-shirts .pound3{
+    width: 200px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    font-size: 20px;
+    
+
+}
+
+
+.summmer-T-shirts .add-to-cart3{
+    background-color: black;
+    color:white;
+    width: 150px;
+    height: 30px;
+   
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-radius: 30px;
+}
+
+.summmer-T-shirts .image-summmer-T-shirts1{
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+/* === التذييل === */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+   
+    
+ <!-- ====== رأس الصفحة ====== -->
+ <header>
+    <h1 class="shop-name">Welcome to Elegance</h1>
+    <p>trendy clothes that suit all tastes </p>
+  </header>
+
+
+
+<!-- يافته بتاعت المحل store sign -->
+
+<div class="store">
+
+    <div class="contant">
+    
+        
+        <img src="./image/صوره محل/بدل شبابى 2021 اكتشف أناقة الكجوال والـ سليم فيت.jpg" class="image" >
+        
+        <p class="paragraph2">up tp 20% off <br>fashion collection winter sale.</p>
+    </div>
+</div>
+<P class="paragraph1">Welcome to <strong>Elegance</strong>! We're here to bring you the latest fashion trends with the best quality. Feel free to explore and enjoy a unique shopping experience!</P>
+
+
+
+
+
+
+
+
+
+
+<main class="products" >
+
+    <h2 class="address">our product</h2>
+
+<!-- <<<<<<<<<<<<<<<الملابس الشتوى >>>>>>>>>>>>>>>>-->
+
+<!-- لمنتج الاول -->
+<div class="winter-clothes">  
+
+    <img src="./image/جواكت/1.jpg" class="ima1" >
+
+    <h2 class="pa1" >winterclothes</h2>
+
+    <p class="pound">4000 pound</p>
+
+    <p class="add-to-cart">add-to-cart </p>
+
+</div>
+
+<!-- المنتج التانى -->
+
+<div class="winter-clothes">
+
+    <img src="./image/جواكت/OIP (1).jpeg" class="ima1" >
+
+    <h2 class="pa1" >winterclothes</h2>
+
+    <p class="pound">4000 pound</p>
+
+    <p class="add-to-cart">add-to-cart </p>
+
+</div>
+
+<!-- <<<<<<<<<<المنتج التالت>>>>>>>>>>>>> -->
+<div class="winter-clothes">
+
+    <img src="./image/جواكت/l2ktK5cwX1as6lqOdg8Arnz1iNwcfowNrxL3zFft.jpg" class="ima1" >
+
+    <h2 class="pa1" >winterclothes</h2>
+
+    <p class="pound">4000 pound</p>
+
+    <p class="add-to-cart">add-to-cart </p>
+
+</div>
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<قمصان>>>>>>>>>>>>>. -->
+
+<div class="shirt">
+
+    <img src="./image/قمصان/eevJGWKBwgqQh9J9dH4GBefJ26vAJdLmv62gfDDX.jpg" class="image-shirt">
+
+    <h2 class="pa2" >men's shirts</h2>
+
+    <p class="pound2">2000 pound</p>
+
+    <p class="add-to-cart2">add-to-cart </p>
+
+</div>
+
+
+<div class="shirt">
+
+    <img src="./image/قمصان/images (1).jpeg" class="image-shirt">
+
+    <h2 class="pa2" >men's shirts</h2>
+
+    <p class="pound2">2000 pound</p>
+
+    <p class="add-to-cart2">add-to-cart </p>
+
+</div>
+
+
+<div class="shirt">
+
+    <img src="./image/قمصان/OIP (1).jpeg" class="image-shirt">
+
+    <h2 class="pa2" >men's shirts</h2>
+
+    <p class="pound2">2000 pound</p>
+
+    <p class="add-to-cart2">add-to-cart </p>
+
+</div>
+
+
+
+<!-- <<<<<<<<<<<<<<<<<تيشرتات>>>>>>>>>>>>>>> -->
+
+<div class="summmer-T-shirts">
+
+    <img src="./image/تيشرتات/1.jpg" class="image-summmer-T-shirts" >
+
+    <h2 class="pa3" >men's shirts</h2>
+
+    <p class="pound3">2000 pound</p>
+
+    <p class="add-to-cart3">add-to-cart </p>
+
+</div>
+
+<div class="summmer-T-shirts">
+
+    <img src="./image/تيشرتات/2.jpg" class="image-summmer-T-shirts" >
+
+    <h2 class="pa3" >men's shirts</h2>
+
+    <p class="pound3">2000 pound</p>
+
+    <p class="add-to-cart3">add-to-cart </p>
+
+</div>
+
+
+<div class="summmer-T-shirts">
+
+    <img src="./image/تيشرتات/R.jpeg" class="image-summmer-T-shirts1" >
+
+    <h2 class="pa3" >men's shirts</h2>
+
+    <p class="pound3">2000 pound</p>
+
+    <p class="add-to-cart3">add-to-cart </p>
+
+</div>
+
+
+
+
+
+
+
+</main>
+
+
+  <!-- ====== التذييل ====== -->
+  <footer>
+    © 2025 Elegance Store – All rights reserved.
+    
+   </footer>
+
+
+
+
+</body>
+</html>
