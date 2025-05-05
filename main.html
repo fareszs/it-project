@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <meta name ="refresh" content="0"> -->
+    <meta name ="refresh" content="0">
     
     <title>ALSultan shopping</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+            document.querySelectorAll("a").forEach(link => {
+                link.setAttribute("target", "_blank");
+            });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+
+
 </head>
 <body>
-    <header>
+    <header> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRV0kZESTifyZA6BOpR4bz2m065Y1W3lK5XA&s" alt="logo" width="100%" height="1000px"class="logo">
+       
     <br>
-        <nav  class="logo"><h1><I>AL Sultan</I></h1>
-            <input   id="search"type="search" placeholder="Search for products..."><button  for="search">search</button>                  <a class="signin" href="">sign in</a><a  class="signup"href="">sign up</a><a class="card"href="">my card</a>    
+        <nav  class="logo">
+        
+         <form >
+          <input   id="search"type="text" placeholder="Search for products..."> 
+          <button type="submit"><i class="fas fa-search"></i></button>
+          </form>                 <a class="signin" href="signin.html">sign in</a><a href="sign_up.html" class="signup"href="">sign up</a><a class="card"href="card.html"><i class="fas fa-shopping-cart"></i></a>    
         
         </nav><BR>
         
-        <img id ="slider" src="imges_main/1.jpeg" alt="changble image" width="100%">
+        <img id ="slider" src="https://kianegypt.com/cdn/shop/files/Kian_Furniture_-_Cover.jpg?v=1691510239" alt="changble image" width="100%" height="300px">
                         <script>
-let images = [
-"imges_main/11.jpeg", "imges_main/12.jpeg", 
-"imges_main/1.jpeg", "imges_main/3.jpeg", "imges_main/4.jpeg",
-"imges_main/5.jpeg", "imges_main/6.jpeg", "imges_main/7.jpeg", "imges_main/8.jpeg",
-"imges_main/9.jpeg", "imges_main/10.jpeg"
-];
+                            let images = ["https://lacasa-egy.com/_next/static/images/wedding-season-98c52cf1982a2e75b5bf310ab366ac87.jpg","https://cdn.almowafir.com/1/%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D9%85%D8%B7%D8%A8%D8%AE.jpg","https://kianegypt.com/cdn/shop/files/Kian_Furniture_-_Cover.jpg?v=1691510239",
+                            "https://cdn.salla.sa/RxKan/23786ce8-2f81-4b6c-86b6-0f5d9c1ade54-1000x312.5-3DREM3Dr4IsEBVtkUg8GjOdmtxqUt2MT3SWy3bO1.png",
+                            "https://live.staticflickr.com/1847/44864657971_72fac63759_b.jpg","https://i.pinimg.com/736x/2b/c8/34/2bc8342372dd3e385683576070334091.jpg","https://lh7-us.googleusercontent.com/J2l24wa_9ATK29JPUCtP2IhOfPF2F3dAts5jKDYoiONLmRXMIw3zTkt7tG3_ixXaIQl3THB5SWeIhJEzUaPq62bgB_OjKWjeedRDhNMRQNctKoxNCN_nq4THOagEub8PyKK5Bv-sB2mQ4ivnM3sY8S0",
+                            "https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/arabic-food.jpg","https://cdn.al-ain.com/images/2021/12/27/133-213907-feast-food-store-leftovers-avoid-waste_700x400.jpg"
 
-let index = 0;
+                            ];
 
-setInterval(function() {
-index = (index + 1) % images.length;
-document.getElementById("slider").src = images[index];
-}, 5000);
+                            let index = 0;
+
+                            setInterval(function() {
+                            index = (index + 1) % images.length;
+                            document.getElementById("slider").src = images[index];
+                            }, 5000);
 
                         </script>
-        
+        <div class="social-bar">
+            <a href="https://www.facebook.com" target="_blank">
+               <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:example@email.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <img src="imges_main/2.jpg" width="100%"height="300px" alt="image 1">
         
         
         
         
         <nav class="navbar">
             
-            <a href="#electronics">Electronics</a>
+            <a href="electronic.html">Electronics</a>
             <a href="fashion.html">Fashion</a>
-            <a href="food">food</a>
-            <a href="#furniture">Furniture</a>
+            <a href="food.html">food</a>
+            <a href="furniture.html">Furniture</a>
                 
         </nav>
     </header>
@@ -54,83 +82,185 @@ document.getElementById("slider").src = images[index];
 
 
 
-        <section>
-            <h2>Electronics</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/laptop.jpg" alt="Laptop">
-                    <h3>Laptop</h3>
-                    <p>$999.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="images/phone.jpg" alt="Smartphone">
-                    <h3>Smartphone</h3>
-                    <p>$699.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- Add more product cards as needed -->
-            </div>
-        </section>
-        <section>
-            <h2>Fashion</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/shirt.jpg" alt="Shirt">
-                    <h3>Shirt</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="images/shoes.jpg" alt="Shoes">
-                    <h3>Shoes</h3>
-                    <p>$49.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- Add more product cards as needed -->
-            </div>
-        </section>
-        <section>
-            <h2>Food</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/food1.jpg" alt="Food Item 1">
-                    <h3>Food Item 1</h3>
-                    <p>$9.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="images/food2.jpg" alt="Food Item 2">
-                    <h3>Food Item 2</h3>
-                    <p>$14.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- Add more product cards as needed -->
-            </div>
-        </section>
-        <section>
-            <h2>Furniture</h2>
-            <div class="product-grid">
-                <div class="product-card">
+     
+       <section id="furniture">
+            <div>  <a target="_blank"href="furniture.html"><img src="https://iinkor.com/wp-content/uploads/2024/03/post-44.jpg" alt="Furniture Banner" width="100%" height="300px"></a></div>
+            <div class="product-carousel">
+                <div class="product" data-name="sofa">
                     <img src="images/sofa.jpg" alt="Sofa">
                     <h3>Sofa</h3>
                     <p>$499.99</p>
-                    <button>Add to Cart</button>
+                    <button><i>Add to Cart</i></button>
                 </div>
-                <div class="product-card">
+                <div class="product" data-name="table">
                     <img src="images/table.jpg" alt="Table">
                     <h3>Table</h3>
-                    <p>$199.99</p>
-                    <button>Add to Cart</button>
+                    <p>$299.99</p>
+                    <button><i>Add to Cart</i></button>
                 </div>
-                <!-- Add more product cards as needed -->
+                <div class="product" data-name="chair">
+                    <img src="images/chair.jpg" alt="Chair">
+                    <h3>Chair</h3>
+                    <p>$199.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product"data-name="bed">
+                    <img src="images/bed.jpg" alt="Bed">
+                    <h3>Bed</h3>
+                    <p>$699.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
             </div>
 
-        </section>
+            <a href="#furniture"><h2 style="text-align:center"><i><strong>shop new</strong></i></h2></a>
+       </section>
+       <section>
+        <div class="banner"></div>
+            <a  target="_blank"href="electronic.html"><img src="https://cdn.salla.sa/form-builder/ekdxVuB0MDI8f6OPtvbImzkvt1FDiPLI2cOhPKB8.png" alt="Electronics Banner" width="100%" height="300px"></a>
+        </div>
+        <div class="product-carousel">
+            <div class="product"data-name="laptop">
+                <img src="images/laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>$999.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="phone">
+                <img src="images/phone.jpg" alt="Phone">
+                <h3>Phone</h3>
+                <p>$699.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="headphones">
+                <img src="images/headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>$199.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="camera">
+                <img src="images/camera.jpg" alt="Camera">
+                <h3>Camera</h3>
+                <p>$499.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="smartwatch">
+                <img src="images/smartwatch.jpg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>$149.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="tv">
+                <img src="images/tv.jpg" alt="TV">
+                <h3>TV</h3>
+                <p>$799.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="speaker">
+                <img src="images/speaker.jpg" alt="Speaker">
+                <h3>Speaker</h3>
+                <p>$99.99</p>
+                <button><i>Add to Cart</i></button>
+            </div>
+            <div class="product"data-name="tablet">
+                <img src="images/tablet.jpg" alt="Tablet">
+                <h3>Tablet</h3>
+                <p>$399.99</p>
+                <button><i>add to card</i></button>
+            </div>
+        </div>
         
+       <a href="electronic.html"><h2 style="text-align:center"><i><strong>shop new</strong></i></h2></a>
+
+        </section>  
+
+           <section>
+          <div>  <a target="_blank"href="fashion.html"><img src="https://sunrisegraphics.org/wp-content/uploads/2024/05/BANNER-7-copy.webp" alt="Fashion Banner" width="100%" height="300px"></a></div>
+            <div class="product-carousel">
+                <div class="product"data-name="shirt">
+                    <img src="images/shirt.jpg" alt="Shirt">
+                    <h3>Shirt</h3>
+                    <p>$29.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product" data-name="dress">
+                    <img src="images/dress.jpg" alt="Dress">
+                    <h3>Dress</h3>
+                    <p>$49.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product" data-name="jacket">
+                    <img src="images/shoes.jpg" alt="Shoes">
+                    <h3>Shoes</h3>
+                    <p>$79.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product"data-name="bag">
+                    <img src="images/bag.jpg" alt="Bag">
+                    <h3>Bag</h3>
+                    <p>$39.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+            </div>
+            <a href="fashion.html"><h2 style="text-align:center"><i><strong>shop new</strong></i></h2></a>
+
+           </section>   
+           <section>
+            <div>  <a target="_blank"href="food.html"><img src="https://img.pikbest.com/origin/09/19/47/30ZpIkbEsTJuw.jpg!w700wp" alt="Food Banner" width="100%" height="300px"></a></div>
+            <div class="product-carousel">
+                <div class="product"data-name="fruit">
+                    <img src="images/fruit.jpg" alt="Fruit">
+                    <h3>Fruit</h3>
+                    <p>$19.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product"data-name="vegetable">
+                    <img src="images/vegetable.jpg" alt="Vegetable">
+                    <h3>Vegetable</h3>
+                    <p>$9.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product"data-name="snacks">
+                    <img src="images/snacks.jpg" alt="Snacks">
+                    <h3>Snacks</h3>
+                    <p>$4.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+                <div class="product"data-name="drinks">
+                    <img src="images/drinks.jpg" alt="Drinks">
+                    <h3>Drinks</h3>
+                    <p>$2.99</p>
+                    <button><i>Add to Cart</i></button>
+                </div>
+            </div>
+
+            <a href="food.html"><h2 style="text-align:center"><i><strong>shop new</strong></i></h2></a>
+
     </main><br><br><br><br><br><br><br><br><br><br>
+        
     <footer>
+        
         <p>&copy; 2025 Al Sultan. All rights reserved.</p>
     </footer>
+    <!-- all the links open in a new tab -->
+     <script>
+            document.querySelectorAll("a").forEach(link => {
+                link.setAttribute("target", "_blank");
+            });
+    </script>
+    <!-- JavaScript for search functionality -->
+    <script>
+            const input = document.getElementById('search');
+            const products = document.querySelectorAll('.product');
+
+            input.addEventListener('input', () => {
+                const keyword = input.value.toLowerCase();
+
+                products.forEach(productCard => {
+                    const name = productCard.dataset.name.toLowerCase();
+                    productCard.style.display = name.includes(keyword) ? 'inline-block' : 'none';
+                });
+            });
+    </script>
+
 </body>
 </html> 
