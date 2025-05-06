@@ -68,7 +68,7 @@ button{
 .logo >form{
     width: 100%;
     display: inline-block;
-    margin-tpo: 7px;
+    margin-top: 7px;
 }
 input {
     
@@ -175,9 +175,10 @@ h2:hover{
 
 .social-bar {
     display: flex;
+
     position: fixed;;
     font-size: 50px;
-   color:#808589
+   color:#808589;
     justify-content: center;
     gap: 10px;
     margin: 20px;
@@ -185,6 +186,7 @@ h2:hover{
 
 .social-bar a{
     color:black;
+    display: block;;
 }
 .social-bar a:hover {
     color: #ff3103;
