@@ -1,85 +1,95 @@
 /* Basic styles for the home page */
 body {
-    
-    
-    background-color: #808589;              /*#808589*/
+
+
+    background-color: #808589;
+    /*#808589*/
     color: #333;
 }
 
 header {
-    height:auto;
-    background-color: #808589;      /*#808589*/
-    
-   
-    
+    height: auto;
+    background-color: #808589;
+    /*#808589*/
+
+
+
 }
 
-.navbar{
+.navbar {
     width: auto;
     text-align: center;
-   height:auto;
-    
+    height: auto;
+
     margin-bottom: 10px;
     background-color: black;
     padding: 20px 0;
-    border:#ff3103 solid 2px;
+    border: #ff3103 solid 2px;
 }
-a{
+
+a {
     text-decoration: none;
     target: _blank;
 
 }
 
-button{
+button {
     margin: 7px;
     width: auto;
     font-size: 22px;
     background-color: white;
     color: black;
-    border-radius:8px;
+    border-radius: 8px;
     border-color: #ff3103;
-    
+
 }
 
 
-.signin,.signup,.card{
+.signin,
+.signup,
+.card {
     width: 10%;
     white-space: nowrap;
-    padding-top: 6px;;
-    justify-content: center; 
-    align-items: center;   
-    background-color: #808589;         
+    padding-top: 6px;
+    ;
+    justify-content: center;
+    align-items: center;
+    background-color: #808589;
     border: 2px solid #ff3103;
     border-color: #ff3103;
     border-radius: 10px;
     color: black;
     text-align: center;
-    
-   display:inline-block;
-    
+
+    display: inline-block;
+
 }
-.signin:hover,.signup:hover,.card:hover{
-    color:#ff3103;
+
+.signin:hover,
+.signup:hover,
+.card:hover {
+    color: #ff3103;
     font-size: 20px;
 }
 
 
 
-.logo >form{
+.logo>form {
     width: 100%;
     display: inline-block;
     margin-top: 7px;
 }
+
 input {
-    
-     background-color: hsl(240, 36%, 96%);
-     color: rgb(7, 8, 0);
-     font-size: 22px;
-     width:80%;
-     border-radius: 10px;
-     border-color: #ff3103;
- }
- 
+
+    background-color: hsl(240, 36%, 96%);
+    color: rgb(7, 8, 0);
+    font-size: 22px;
+    width: 80%;
+    border-radius: 10px;
+    border-color: #ff3103;
+}
+
 
 
 
@@ -90,21 +100,20 @@ input {
     margin-top: 0;
     gap: 5px;
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: center;
     background-color: #0a0a0b;
-   padding: 4px;
-    height:60px;
-    
-    border-radius:10px ;
+    padding: 4px;
+    height: 60px;
+
+    border-radius: 10px;
     font-size: 10px;
-    border:#ff3103 solid 2px
-    
+    border: #ff3103 solid 2px
 }
 
-.navbar>a:hover{
+.navbar>a:hover {
     color: #ff3103;
-   
+
     border-radius: 5px;
     font-size: 50px;
     text-decoration: none;
@@ -115,85 +124,110 @@ input {
 
 
 
-button:hover{
-    
-    background: #808589;
+button:hover {
+    color:#ff3103;
+    background:black;
 }
 
 
-nav> a {
+nav>a {
     display: inline-block;
-   
-   width: 10%;
-    color:#ff3103;
-    
+
+    width: 10%;
+    color: #ff3103;
+
     margin: 10px 15px;
     font-size: 20px;
     text-align: center;
-   border-color: #ff3103;
+    border-color: #ff3103;
     border-radius: 10px;
-    
+
 }
 
 
 h1 {
     text-align: center;
     font-size: 2em;
-    
+
     color: #f8f3f3;
 }
+
 h2 {
-    background-color:black;
+    background-color: black;
     font-size: 3em;
-    margin:0px;
+    margin: 0px;
     color: #e70b0b;
-    border-radius:10px ;
-    border:solid 2px #ff3103;
+    border-radius: 10px;
+    border: solid 2px #ff3103;
 }
-h2:hover{
+
+h2:hover {
     font-size: 80px;
 }
+
 .product-carousel {
     display: flex;
     overflow-x: auto;
     gap: 10px;
     padding: 10px 0;
 }
+
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     flex: 0 0 auto;
-    width: 150px;
+    width:200px ;
+    height: auto;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     background-color: #f9f9f9;
 }
+.product h3,.product p {
+    
+    font-size: 1.2em;
+    color:black;
+}
+
+
+
 .product img {
+    margin-top: 0px;
     width: 100%;
-    height: auto;
-    border-radius: 5px;}
+    height: 100px;
+    border-radius: 5px;
+}
 
 .social-bar {
     display: flex;
 
-    position: fixed;;
+    position: fixed;
+    ;
     font-size: 50px;
-   color:#808589;
+    color: #808589;
     justify-content: center;
     gap: 10px;
     margin: 20px;
 }
 
-.social-bar a{
-    color:black;
-    display: block;;
+.social-bar a {
+    color: black;
+    display: block;
+    ;
 }
+
 .social-bar a:hover {
     color: #ff3103;
     font-size: 60px;
     text-decoration: none;
 }
+.more{
+    width:100%;
 
+
+}
 
 
 
@@ -219,8 +253,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    
+
     bottom: 0;
     width: 100%;
 }
-
