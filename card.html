@@ -1,1 +1,339 @@
-<h1>welcome</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delivery & Shipping</title>
+    <style> 
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #E6F7F5;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+        
+        .alert-message {
+            background-color: #4CBBB7;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px 6px 0 0;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .alert-message.show {
+            transform: translateY(0);
+        }
+        
+        h1 {
+            color: #3674B5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: black;
+            margin-top: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        th, td {
+            border: 1px solid #D1F8EF;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #A1E3F9;
+            color: #2A5D92;
+            font-weight: bold;
+            border-bottom: 2px solid #7ACDDA;
+        }
+        
+        .action-btn {
+            background-color: transparent;
+            color: #3674B5;
+            border: 1px solid #3674B5;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all 0.15s;
+        }
+        
+        .action-btn:hover {
+            background-color: #3674B5;
+            color: white;
+        }
+        
+        .action-btn.remove {
+            color: #E57373;
+            border-color: #E57373;
+        }
+        
+        .action-btn.remove:hover {
+            background-color: #E57373;
+            color: white;
+        }
+        
+        .remove-all-btn {
+            background-color: white;
+            color: #E57373;
+            border: 1px solid #E57373;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.2s;
+            margin-top: 15px;
+        }
+        
+        .remove-all-btn:hover {
+            background-color: #E57373;
+            color: white;
+        }
+        
+        .nav {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+         12px 24px;
+            background-color: #3674B5;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.2s;
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav a:hover {
+            background-color: #2A5D92;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        #deliveryPage {
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        tfoot tr td {
+            background-color: #E3F8F7;
+            font-weight: bold;
+            border-top: 2px solid #7ACDDA;
+        }
+        
+        #grandTotal {
+            color: #2A5D92;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .grand-total-label {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .checkout-btn {
+            background-color: #4CBBB7;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.2s;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+            letter-spacing: 0.5px;
+            float: right;
+        }
+        
+        .checkout-btn:hover {
+            background-color: #3CA7A3;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+            transform: translateY(-2px);
+        }
+        
+        .buttons-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .left-buttons {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="alert-message" id="alertMessage">Products Will Send To You In Few Hours</div>
+        <div id="deliveryPage">
+            <h1>Delivery & Shipping</h1>
+            
+            <h2>Selected Products</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <!-- Cart items will be added here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: right;"><span class="grand-total-label">Grand Total:</span></td>
+                        <td id="grandTotal">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <div class="buttons-container">
+                <div class="left-buttons">
+                    <button type="button" class="remove-all-btn" onclick="removeAllItems()">Remove All Items</button>
+                </div>
+                <button type="button" class="checkout-btn" onclick="showCheckoutAlert()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Display cart items when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            displayCartItems();
+        });
+        
+        // Function to show checkout alert message
+        function showCheckoutAlert() {
+            const alertMessage = document.getElementById('alertMessage');
+            alertMessage.classList.add('show');
+            
+            // Auto-hide after 3 seconds
+            setTimeout(function() {
+                alertMessage.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Function to remove one quantity of a specific item
+        function removeItem(productName) {
+            // Get current cart
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            // Find the product in the cart
+            const productIndex = cart.findIndex(item => item.name === productName);
+            
+            if (productIndex !== -1) {
+                // Decrease quantity by 1
+                cart[productIndex].quantity -= 1;
+                
+                // If quantity becomes 0 or less, remove the item completely
+                if (cart[productIndex].quantity <= 0) {
+                    cart.splice(productIndex, 1);
+                }
+                
+                // Save updated cart
+                localStorage.setItem('cart', JSON.stringify(cart));
+                
+                // Refresh cart display
+                displayCartItems();
+            }
+        }
+        
+        // Function to remove all items from the cart
+        function removeAllItems() {
+            // Clear the cart array
+            localStorage.setItem('cart', JSON.stringify([]));
+            
+            // Refresh cart display
+            displayCartItems();
+        }
+        
+        // Function to display cart items in table
+        function displayCartItems() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsElement = document.getElementById('cartItems');
+            const grandTotalElement = document.getElementById('grandTotal');
+            
+            // Clear previous cart items
+            cartItemsElement.innerHTML = '';
+            
+            let grandTotal = 0;
+            
+            // Display each cart item
+            cart.forEach(item => {
+                const total = item.price * item.quantity;
+                grandTotal += total;
+                
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${total.toFixed(2)}</td>
+                    <td>
+                        <button class="action-btn remove" onclick="removeItem('${item.name}')">Remove Item</button>
+                    </td>
+                `;
+                
+                cartItemsElement.appendChild(row);
+            });
+            
+            // Update grand total
+            grandTotalElement.textContent = `$${grandTotal.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
