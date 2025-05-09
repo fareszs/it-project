@@ -203,19 +203,18 @@ h2:hover {
 .social-bar {
     display: flex;
 
-    position: fixed;
-    ;
+   
     font-size: 50px;
     color: #808589;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin: 20px;
 }
 
 .social-bar a {
     color: black;
     display: block;
-    ;
+    
 }
 
 .social-bar a:hover {
@@ -228,8 +227,14 @@ h2:hover {
 
 
 }
+#add{
+   
+    display: block;
+    margin: 0 auto;
+    width:40%;
 
 
+}
 
 
 
