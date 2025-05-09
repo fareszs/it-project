@@ -29,6 +29,14 @@ header {
  
 
 }
+.cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+}
 
 .store .contant{
     width: 100%;
@@ -418,7 +426,8 @@ footer {
 
     <p class="pound">4000 pound</p>
 
-    <p class="add-to-cart">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('wintercloth1', 4000, 'fashionq1')">Add to Cart</button>
+    <input type="number" id="fashionq1" value="1" min="1">
 
 </div>
 
@@ -432,7 +441,8 @@ footer {
 
     <p class="pound">4000 pound</p>
 
-    <p class="add-to-cart">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('wintercloth2', 4000, 'fashionq2')">Add to Cart</button>
+    <input type="number" id="fashionq2" value="1" min="1">
 
 </div>
 
@@ -445,7 +455,8 @@ footer {
 
     <p class="pound">4000 pound</p>
 
-    <p class="add-to-cart">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('wintercloth3', 4000, 'fashionq3')">Add to Cart</button>
+    <input type="number" id="fashionq3" value="1" min="1">
 
 </div>
 
@@ -460,7 +471,8 @@ footer {
 
     <p class="pound2">2000 pound</p>
 
-    <p class="add-to-cart2">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('shirt1', 2000, 'fashionq4')">Add to Cart</button>
+    <input type="number" id="fashionq4" value="1" min="1">
 
 </div>
 
@@ -473,7 +485,8 @@ footer {
 
     <p class="pound2">2000 pound</p>
 
-    <p class="add-to-cart2">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('shirt2', 2000, 'fashionq5')">Add to Cart</button>
+    <input type="number" id="fashionq5" value="1" min="1">
 
 </div>
 
@@ -486,7 +499,8 @@ footer {
 
     <p class="pound2">2000 pound</p>
 
-    <p class="add-to-cart2">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('shirt3', 2000, 'fashionq6')">Add to Cart</button>
+    <input type="number" id="fashionq6" value="1" min="1">
 
 </div>
 
@@ -500,9 +514,11 @@ footer {
 
     <h2 class="pa3" >men's shirts</h2>
 
-    <p class="pound3">2000 pound</p>
+    <p class="pound3">3000 pound</p>
 
-    <p class="add-to-cart3">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')">Add to Cart</button>
+    <input type="number" id="fashionq7" value="1" min="1">
+
 
 </div>
 
@@ -512,9 +528,10 @@ footer {
 
     <h2 class="pa3" >men's shirts</h2>
 
-    <p class="pound3">2000 pound</p>
+    <p class="pound3">3000 pound</p>
 
-    <p class="add-to-cart3">add-to-cart </p>
+    <button class="cart-btn" onclick="addToCart('summmer-T-shirts2', 3000, 'fashionq8')">Add to Cart</button>
+    <input type="number" id="fashionq8" value="1" min="1">
 
 </div>
 
@@ -525,9 +542,9 @@ footer {
 
     <h2 class="pa3" >men's shirts</h2>
 
-    <p class="pound3">2000 pound</p>
-
-    <p class="add-to-cart3">add-to-cart </p>
+    <p class="pound3">3000 pound</p>
+    <button class="cart-btn" onclick="addToCart('summmer-T-shirts3', 3000, 'fashionq9')">Add to Cart</button>
+    <input type="number" id="fashionq9" value="1" min="1">
 
 </div>
 
@@ -547,7 +564,7 @@ footer {
    </footer>
 
 
-
+ <script src="cart.js"></script>
 
 </body>
 </html>

@@ -33,7 +33,15 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
-    }
+    }  
+    .cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
     .hero {
       background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
@@ -171,36 +179,48 @@
       <img src="resturant_images/images.jfif" alt="Chicken Kabsa" />
       <h3>  </h3>
       <p>A special Gulf dish with seasoned chicken and basmati rice.</p>
+      <button class="cart-btn" onclick="addToCart('Chicken-Kabsa', 599.99, 'foodq1')">Add to Cart</button>
+      <input type="number" id="foodq1" value="1" min="1">
     </div>
 
     <div class="menu-item" id="Margherita-Pizza" >
       <img src="resturant_images/photo-1574071318508-1cdbab80d002.jfif" alt="Margherita Pizza" />
       <h3>Margherita Pizza</h3>
       <p>A traditional Italian pizza with mozzarella cheese and our special sauce.</p>
+      <button class="cart-btn" onclick="addToCart('Margherita-Pizza', 250, 'foodq2')">Add to Cart</button>
+      <input type="number" id="foodq2" value="1" min="1">
     </div>
 
     <div class="menu-item" id=">Mixed-Grill">
       <img src="resturant_images/istockphoto-673139370-612x612.jpg" alt="Mixed Grill" />
       <h3>Mixed Grill</h3>
       <p>An assortment of charcoal-grilled meat and chicken served with appetizers.</p>
+      <button class="cart-btn" onclick="addToCart('Mixed-Grill', 550, 'foodq3')">Add to Cart</button>
+      <input type="number" id="foodq3" value="1" min="1">
     </div>
 
     <div class="menu-item" id="Prime-Rib-Steak">
       <img src="resturant_images/primerib-steak.jpg" alt="Prime Rib Steak" />
       <h3>Prime Rib Steak</h3>
       <p>Grilled prime rib steak served with vegetables and dipping sauce.</p>
+      <button class="cart-btn" onclick="addToCart('Prime-Rib-Steak', 330, 'foodq4')">Add to Cart</button>
+      <input type="number" id="foodq4" value="1" min="1">
     </div>
 
     <div class="menu-item"  id="Grilled-Combo">
       <img src="resturant_images/images-4-9.jpg" alt="Grilled Combo" />
       <h3>Grilled Combo</h3>
       <p>Delicious mix of grilled chicken and lamb with salad and bread.</p>
+      <button class="cart-btn" onclick="addToCart('Grilled Combo', 679.99, 'foodq5')">Add to Cart</button>
+      <input type="number" id="foodq5" value="1" min="1">
     </div>
 
     <div class="menu-item" id="Kofta-Mix">
       <img src="resturant_images/kuftalambchickenlampgreen.webp" alt="Kofta Mix" />
       <h3>Kofta Mix</h3>
       <p>Charcoal-grilled lamb and chicken kofta with fresh herbs and sauces.</p>
+      <button class="cart-btn" onclick="addToCart('Kofta Mix-Kabsa', 349.99, 'foodq6')">Add to Cart</button>
+      <input type="number" id="foodq6" value="1" min="1">
     </div>
   </div>
 </section>
@@ -208,7 +228,7 @@
 <footer>
   <p>© 2025 Al-Taam Al-Asil Restaurant - All rights reserved.</p>
 </footer>
-
+<script src="cart.js"></script>
 </body>
 </html>
 
