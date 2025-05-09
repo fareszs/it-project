@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nothing+You+Could+Do&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" 
+    rel="stylesheet">
+
+	<link rel="stylesheet" href="/style.css">
+	<title>Electronics</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Ecma</h1>
+        <a class="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Sign Up</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+	<div class="project">
+		<div class="container">
+			<div class="section">
+				<div class="product">
+					<h2>Computers</h2>
+					<div class="image">
+						<img src="0-hs16-win-11-hasons-original-imah4ky38fubg6mq.webp" alt="Pc picture">
+					</div>
+					<p>
+                        This is a mid-range PC build with a powerful Intel i5 12400F 
+                        or Ryzen 5 5600 processor, 
+                        GTX 1660 Super graphics card, 16GB RAM, and 500GB NVMe SSD.
+					</p>
+                    <a href="computers.html">See All →</a>
+				</div>		
+
+				<div class="product">
+					<h2>Laptops</h2>
+					<div class="image">
+						<img src="Laptop-computer.webp" alt="Laptop picture">
+					</div>
+					<p>     
+                        This is a mid-range laptop with an Intel i5 1240P or 
+                        Ryzen 5 5625U, 16GB RAM, 512GB SSD, and a 15.6" FHD display, 
+                        perfect for programming and daily tasks.
+					</p>
+                    <a href="laptops.html">See All →</a>
+				</div>			
+			</div>
+
+			<div class="section">
+				<div class="product">
+					<h2>Smart Watchs</h2>
+					<div class="image">
+						<img src="eec3cf88-4b58-4227-96ee-75232be58d58_900x.webp" alt="Smart watch picture">
+					</div>
+					<p>
+                        This smartwatch features a sleek design, touchscreen display, heart rate monitor, step counter, 
+                        and notifications support. 
+                        It’s ideal for fitness tracking and everyday use.
+					</p>
+                    <a href="smartwatches.html">See All →</a>
+				</div>			
+
+				<div class="product">
+					<h2>Smart Phones</h2>
+					<div class="image">
+						<img src="WhatsApp Image 2025-05-06 at 15.24.28_4006e5c7.jpg" height="265px" alt="Phone picture">
+					</div>
+					<p>  
+                        This smartphone comes with a powerful processor, high-quality camera, 
+                        large OLED display, long-lasting battery, and fast charging, 
+                        making it great for daily use and media.
+					</p>
+                    <a href="smartphones.html">See All →</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<style>
+
+
+.product a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #d1f8ef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+</style>
+
+<script>
+document.querySelector(".search-bar button").addEventListener("click", function () {
+    filterProducts();
+});
+
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        filterProducts();
+    }
+});
+
+function filterProducts() {
+    let query = document.querySelector(".search-bar input").value.trim().toLowerCase();
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(function (product) {
+        let title = product.querySelector("h2").innerText.toLowerCase(); 
+        if (title.includes(query)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+
+    if (query === "") {
+        products.forEach(p => p.style.display = "block");
+    }
+}
+document.querySelectorAll(".product").forEach(function(product) {
+    product.addEventListener("mouseenter", function() {
+        product.style.backgroundColor = "#d1f8ef";
+        product.style.transition = "0.3s";
+    });
+    product.addEventListener("mouseleave", function() {
+        product.style.backgroundColor = "transparent";
+    });
+});
+document.querySelector(".search-bar button").addEventListener("click", function () {
+    let query = document.querySelector(".search-bar input").value.trim();
+    if (query !== "") {
+        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+    }
+});
+
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        document.querySelector(".search-bar button").click();
+    }
+});
+</script>
+</body>
+</html>

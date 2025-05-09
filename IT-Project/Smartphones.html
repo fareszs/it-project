@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Smartphones</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Ecma</h1>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Sign Up</a>
+        <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    </div>
+
+    <div class="project">
+        <div class="container">
+            <div class="section">
+                <!-- Product 1 -->
+                <div class="product">
+                    <h2>IPHONE 13</h2>
+                    <div class="image">
+                        <img src="iphone.jpeg" height="270px" alt="Phone picture">
+                    </div>
+                    <p>This smartphone features a high-quality camera, long-lasting battery, and fast charging capabilities.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <h2>OPPO A18</h2>
+                    <div class="image">
+                        <img src="oppo.jpg" height="270px" alt="Phone picture">
+                    </div>
+                    <p>Equipped with a powerful processor, OLED display, and fast charging for seamless performance.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <h2>Samsung A53</h2>
+                    <div class="image">
+                        <img src="samsung.jpeg" height="270px" alt="Phone picture">
+                    </div>
+                    <p>Featuring an excellent camera setup and smooth user experience, perfect for media and daily tasks.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product">
+                    <h2>MI 13</h2>
+                    <div class="image">
+                        <img src="redmi.jpeg" height="270px" alt="Phone picture">
+                    </div>
+                    <p>Enjoy amazing features like a large battery, fast processing, and stunning display with this smartphone.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+// تشغيل البحث عند الضغط على الزر
+document.querySelector(".search-bar button").addEventListener("click", function () {
+    filterProducts();
+});
+
+// تشغيل البحث عند الضغط على Enter
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        filterProducts();
+    }
+});
+
+function filterProducts() {
+    let query = document.querySelector(".search-bar input").value.trim().toLowerCase();
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(function (product) {
+        let title = product.querySelector("h2").innerText.toLowerCase(); // ← بس العنوان
+        if (title.includes(query)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+
+    // لو فاضي، يرجع كل حاجة
+    if (query === "") {
+        products.forEach(p => p.style.display = "block");
+    }
+}
+        document.querySelectorAll(".product").forEach(function(product) {
+            product.addEventListener("mouseenter", function() {
+                product.style.backgroundColor = "#d1f8ef";
+                product.style.transition = "0.3s";
+            });
+            product.addEventListener("mouseleave", function() {
+                product.style.backgroundColor = "transparent";
+            });
+        });
+        document.querySelector(".search-bar button").addEventListener("click", function () {
+    let query = document.querySelector(".search-bar input").value.trim();
+    if (query !== "") {
+        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+    }
+});
+
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        document.querySelector(".search-bar button").click();
+    }
+});
+    </script>
+</body>
+</html>
