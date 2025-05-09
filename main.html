@@ -14,7 +14,8 @@
    
 </head>
 
-<body>
+<body>  <script src="cart.html"></script>
+        <script src="cart.js"></script>
     <header>
         <nav class="logo"><img src="  imges_main/صورة واتساب بتاريخ 1446-11-08 في 14.11.19_a84e30fe.jpg"></nav>
 
@@ -29,7 +30,7 @@
             <form>
                 <input id="search" type="text" placeholder="Search for products...">
                 <button type="submit"><i class="fas fa-search"></i></button>
-            </form> <a class="signin" target="_blank" href="signin.html">sign in</a><a target="_blank" href="sign_up.html" class="signup" href="">signup</a><a class="card" target="_blank" href="card.html"><i class="fas fa-shopping-cart"></i></a>
+            </form> <a class="signin" target="_blank" href="signin.html">sign in</a><a target="_blank" href="sign_up.html" class="signup" href="">signup</a><a class="card" target="_blank" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
 
         </nav><BR>
         <div class="social-bar">
@@ -96,25 +97,31 @@
                     <img src="images/sofa.jpg" alt="Sofa">
                     <h3>Sofa</h3>
                     <p>$499.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')" ><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
+
+
                 <div class="product" data-name="table">
                     <img src="images/table.jpg" alt="Table">
                     <h3>Table</h3>
                     <p>$299.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')" ><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="chair">
                     <img src="images/chair.jpg" alt="Chair">
                     <h3>Chair</h3>
                     <p>$199.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="bed">
                     <img src="images/bed.jpg" alt="Bed">
                     <h3>Bed</h3>
                     <p>$699.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button  class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')" ><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
             </div>
 
@@ -133,49 +140,57 @@
                     <img src="images/laptop.jpg" alt="Laptop">
                     <h3>Laptop</h3>
                     <p>$999.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="phone">
                     <img src="images/phone.jpg" alt="Phone">
                     <h3>Phone</h3>
                     <p>$699.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="headphones">
                     <img src="images/headphones.jpg" alt="Headphones">
                     <h3>Headphones</h3>
                     <p>$199.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="camera">
                     <img src="images/camera.jpg" alt="Camera">
                     <h3>Camera</h3>
                     <p>$499.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="smartwatch">
                     <img src="images/smartwatch.jpg" alt="Smartwatch">
                     <h3>Smartwatch</h3>
                     <p>$149.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="tv">
                     <img src="images/tv.jpg" alt="TV">
                     <h3>TV</h3>
                     <p>$799.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="speaker">
                     <img src="images/speaker.jpg" alt="Speaker">
                     <h3>Speaker</h3>
                     <p>$99.99</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
                 <div class="product" data-name="tablet">
                     <img src="images/tablet.jpg" alt="Tablet">
                     <h3>Tablet</h3>
                     <p>$399.99</p>
-                    <button><i>add to card</i></button>
+                    <button class="cart-btn"addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>add to card</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
             </div>
 
@@ -196,7 +211,8 @@
                             alt="Prime Rib Steak" /></a>
                     <h3>Prime Rib Steak</h3>
                     <p>Grilled prime rib steak served with vegetables and dipping sauce.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -205,7 +221,8 @@
                             alt="Grilled Combo" /></a>
                     <h3>Grilled Combo</h3>
                     <p>Delicious mix of grilled chicken and lamb with salad and bread.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -214,7 +231,8 @@
                             alt="Mixed Grill" /></a>
                     <h3>Mixed Grill</h3>
                     <p>An assortment of charcoal-grilled meat and chicken served with appetizers.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -223,7 +241,8 @@
                             alt="Kofta Mix" /> </a>
                     <h3>Kofta Mix</h3>
                     <p>Charcoal-grilled lamb and chicken kofta with fresh herbs and sauces.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -232,7 +251,8 @@
                             src="resturant_images/photo-1574071318508-1cdbab80d002.jfif" alt="Margherita Pizza" /> </a>
                     <h3>Margherita Pizza</h3>
                     <p>A traditional Italian pizza with mozzarella cheese and our special sauce.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -240,7 +260,8 @@
                     <a href="food.html#Chicken-Kabsa"><img src="resturant_images/images.jfif" alt="Chicken Kabsa" /></a>
                     <h3>Chicken Kabsa</h3>
                     <p>A special Gulf dish with seasoned chicken and basmati rice.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -265,8 +286,8 @@
                         <h3>winterclothes</h3>
 
                         <p>4000 pound</p>
-
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="dress">
                         <img src="fashion_images/l2ktK5cwX1as6lqOdg8Arnz1iNwcfowNrxL3zFft.jpg" class="ima1">
@@ -274,7 +295,8 @@
                         <h3>winterclothes</h3>
 
                         <p>4000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="jacket">
                         <img src="fashion_images/1.jpg" class="ima1">
@@ -282,7 +304,8 @@
                         <h3>winterclothes</h3>
 
                         <p>4000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="bag">
                         <img src="fashion_images/eevJGWKBwgqQh9J9dH4GBefJ26vAJdLmv62gfDDX.jpg" class="image-shirt">
@@ -291,7 +314,8 @@
 
                         <p>2000 pound</p>
 
-                        <button><i>Add to Cart</i></button>
+                        <button onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="shoes">
                         <img src="fashion_images/images (1).jpeg" class="image-shirt">
@@ -299,7 +323,8 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="sweater">
                         <img src="fashion_images/OIP (1).jpeg" class="image-shirt">
@@ -307,7 +332,8 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button  class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="pants">
                         <img src="fashion_images/R.jpeg" class="image-summmer-T-shirts">
@@ -315,7 +341,8 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button  class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="hat">
                         <img src="fashion_images/2.jpg" class="image-summmer-T-shirts">
@@ -323,7 +350,8 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button  class="cart-btn"onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                     <div class="product" data-name="scarf">
                         <img src="fashion_images/1-1.jpg" class="image-summmer-T-shirts1">
@@ -332,7 +360,8 @@
 
                         <p>2000 pound</p>
 
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
+                        <input type="number" id="foodq1" value="1" min="1">
                     </div>
                 </div>
                 <a href="fashion.html">
@@ -390,6 +419,7 @@
     </script>
 
 
+  
 
 
 </body>
