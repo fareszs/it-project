@@ -196,7 +196,8 @@
                             alt="Prime Rib Steak" /></a>
                     <h3>Prime Rib Steak</h3>
                     <p>Grilled prime rib steak served with vegetables and dipping sauce.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Prime-Rib-Steak', 330, 'foodq4')">Add to Cart</button>
+                    <input type="number" id="foodq4" value="1" min="1">
                 </div>
 
 
@@ -205,7 +206,8 @@
                             alt="Grilled Combo" /></a>
                     <h3>Grilled Combo</h3>
                     <p>Delicious mix of grilled chicken and lamb with salad and bread.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Grilled Combo', 679.99, 'foodq5')">Add to Cart</button>
+                    <input type="number" id="foodq5" value="1" min="1">
                 </div>
 
 
@@ -214,7 +216,8 @@
                             alt="Mixed Grill" /></a>
                     <h3>Mixed Grill</h3>
                     <p>An assortment of charcoal-grilled meat and chicken served with appetizers.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Mixed-Grill', 550, 'foodq3')">Add to Cart</button>
+                    <input type="number" id="foodq3" value="1" min="1">
                 </div>
 
 
@@ -223,7 +226,8 @@
                             alt="Kofta Mix" /> </a>
                     <h3>Kofta Mix</h3>
                     <p>Charcoal-grilled lamb and chicken kofta with fresh herbs and sauces.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Kofta Mix-Kabsa', 349.99, 'foodq6')">Add to Cart</button>
+                    <input type="number" id="foodq6" value="1" min="1">
                 </div>
 
 
@@ -232,7 +236,8 @@
                             src="resturant_images/photo-1574071318508-1cdbab80d002.jfif" alt="Margherita Pizza" /> </a>
                     <h3>Margherita Pizza</h3>
                     <p>A traditional Italian pizza with mozzarella cheese and our special sauce.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Margherita-Pizza', 250, 'foodq2')">Add to Cart</button>
+                    <input type="number" id="foodq2" value="1" min="1">
                 </div>
 
 
@@ -240,7 +245,8 @@
                     <a href="food.html#Chicken-Kabsa"><img src="resturant_images/images.jfif" alt="Chicken Kabsa" /></a>
                     <h3>Chicken Kabsa</h3>
                     <p>A special Gulf dish with seasoned chicken and basmati rice.</p>
-                    <button><i>Add to Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('Chicken-Kabsa', 599.99, 'foodq1')">Add to Cart</button>
+                    <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
 
@@ -266,7 +272,9 @@
 
                         <p>4000 pound</p>
 
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('wintercloth1', 4000, 'fashionq1')">Add to Cart</button>
+                        <input type="number" id="fashionq1" value="1" min="1">
+                    
                     </div>
                     <div class="product" data-name="dress">
                         <img src="fashion_images/l2ktK5cwX1as6lqOdg8Arnz1iNwcfowNrxL3zFft.jpg" class="ima1">
@@ -274,7 +282,8 @@
                         <h3>winterclothes</h3>
 
                         <p>4000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('wintercloth2', 4000, 'fashionq2')">Add to Cart</button>
+                        <input type="number" id="fashionq2" value="1" min="1">
                     </div>
                     <div class="product" data-name="jacket">
                         <img src="fashion_images/1.jpg" class="ima1">
@@ -282,7 +291,10 @@
                         <h3>winterclothes</h3>
 
                         <p>4000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        
+                    <button class="cart-btn" onclick="addToCart('wintercloth3', 4000, 'fashionq3')">Add to Cart</button>
+                    <input type="number" id="fashionq3" value="1" min="1">
+
                     </div>
                     <div class="product" data-name="bag">
                         <img src="fashion_images/eevJGWKBwgqQh9J9dH4GBefJ26vAJdLmv62gfDDX.jpg" class="image-shirt">
@@ -291,7 +303,8 @@
 
                         <p>2000 pound</p>
 
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('shirt1', 2000, 'fashionq4')">Add to Cart</button>
+                        <input type="number" id="fashionq4" value="1" min="1">
                     </div>
                     <div class="product" data-name="shoes">
                         <img src="fashion_images/images (1).jpeg" class="image-shirt">
@@ -299,7 +312,8 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('shirt2', 2000, 'fashionq5')">Add to Cart</button>
+                        <input type="number" id="fashionq5" value="1" min="1">
                     </div>
                     <div class="product" data-name="sweater">
                         <img src="fashion_images/OIP (1).jpeg" class="image-shirt">
@@ -307,32 +321,37 @@
                         <h3>men's shirts</h3>
 
                         <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                    
+                        <button class="cart-btn" onclick="addToCart('shirt3', 2000, 'fashionq6')">Add to Cart</button>
+                         <input type="number" id="fashionq6" value="1" min="1">
                     </div>
                     <div class="product" data-name="pants">
                         <img src="fashion_images/R.jpeg" class="image-summmer-T-shirts">
 
                         <h3>men's shirts</h3>
 
-                        <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <p>3000 pound</p>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')">Add to Cart</button>
+                        <input type="number" id="fashionq7" value="1" min="1">
                     </div>
                     <div class="product" data-name="hat">
                         <img src="fashion_images/2.jpg" class="image-summmer-T-shirts">
 
                         <h3>men's shirts</h3>
 
-                        <p>2000 pound</p>
-                        <button><i>Add to Cart</i></button>
+                        <p>3000 pound</p>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts2', 3000, 'fashionq8')">Add to Cart</button>
+                        <input type="number" id="fashionq8" value="1" min="1">
                     </div>
                     <div class="product" data-name="scarf">
                         <img src="fashion_images/1-1.jpg" class="image-summmer-T-shirts1">
 
                         <h3>men's shirts</h3>
 
-                        <p>2000 pound</p>
+                        <p>3000 pound</p>
 
-                        <button><i>Add to Cart</i></button>
+                        <button class="cart-btn" onclick="addToCart('summmer-T-shirts3', 3000, 'fashionq9')">Add to Cart</button>
+                        <input type="number" id="fashionq9" value="1" min="1">
                     </div>
                 </div>
                 <a href="fashion.html">
@@ -390,7 +409,7 @@
     </script>
 
 
-
+<script src="cart.js"></script>
 
 </body>
 
