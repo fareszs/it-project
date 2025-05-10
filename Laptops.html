@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylee.css">
+    <title>Laptops</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Ecma</h1>
+        <a href="#">Home</a>
+        <a href="#">Cart</a>
+    </div>
+
+    <div class="project">
+        <div class="container">
+            <div class="section">
+                <div class="product">
+                    <h2>Gaming Laptop </h2>
+                    <div class="image">
+                        <img src="gaming-laptop1.webp" height="180px" alt="Laptop picture">
+                    </div>
+                    <p>This gaming laptop features Intel i7 12700H, 32GB RAM, RTX 3070, and 1TB SSD for seamless gaming experience.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <div class="product">
+                    <h2>Gaming Laptop </h2>
+                    <div class="image">
+                        <img src="gaming-laptop2.jpg" alt="Laptop picture">
+                    </div>
+                    <p>A powerful gaming laptop with Intel i9, 64GB RAM, and RTX 3080 for top-tier performance in every game.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <div class="product">
+                    <h2>Business Laptop </h2>
+                    <div class="image">
+                        <img src="busniss laptop1.jpg" alt="Laptop picture">
+                    </div>
+                    <p>This business laptop comes with Intel i5 1240P, 16GB RAM, and 512GB SSD, perfect for work and productivity.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <div class="product">
+                    <h2>Business Laptop </h2>
+                    <div class="image">
+                        <img src="busniss laptop2.jpg" alt="Laptop picture">
+                    </div>
+                    <p>Designed for work, featuring Ryzen 5 5625U, 16GB RAM, and 512GB SSD for fast and efficient performance.</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.querySelector(".search-bar button").addEventListener("click", function () {
+    filterProducts();
+});
+
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        filterProducts();
+    }
+});
+
+function filterProducts() {
+    let query = document.querySelector(".search-bar input").value.trim().toLowerCase();
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(function (product) {
+        let title = product.querySelector("h2").innerText.toLowerCase();
+        if (title.includes(query)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+
+    if (query === "") {
+        products.forEach(p => p.style.display = "block");
+    }
+}
+        document.querySelectorAll(".product").forEach(function(product) {
+            product.addEventListener("mouseenter", function() {
+                product.style.backgroundColor = "#d1f8ef";
+                product.style.transition = "0.3s";
+            });
+            product.addEventListener("mouseleave", function() {
+                product.style.backgroundColor = "transparent";
+            });
+        });
+        document.querySelector(".search-bar button").addEventListener("click", function () {
+    let query = document.querySelector(".search-bar input").value.trim();
+    if (query !== "") {
+        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+    }
+});
+
+document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        document.querySelector(".search-bar button").click();
+    }
+});
+    </script>
+</body>
+</html>
