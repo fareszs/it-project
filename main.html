@@ -17,10 +17,11 @@
 <body>
     <script src="cart.js"></script>
     <header>
-        <h1 style="color:#ef0a0a;font-size:40px">ECMA shopping</h1>
+        <h1 style="color:#ef0a0a;font-size:40px">ECMA   shopping</h1>
 
 
 
+        <!-- earch form  sign_in   sign_up  -->
 
         <nav class="logo">
 
@@ -31,15 +32,16 @@
                 <input id="search" type="text" placeholder="Search for products...">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <a class="signin" target="_blank" href="signin.html">sign in</a><a target="_blank" href="sign_up.html"
-                class="signup" href="">sign up</a><a class="card" target="_blank" href="cart.html"><i
-                    class="fas fa-shopping-cart"></i>
-            </a>
+            <a class="signin" target="_blank" href="signin.html">sign in</a>
+            <a target="_blank" href="sign_up.html"class="signup" href="">sign up</a>
+            <a class="card" target="_blank" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
 
         </nav><BR>
 
         <img id="slider" src="https://kianegypt.com/cdn/shop/files/Kian_Furniture_-_Cover.jpg?v=1691510239"
             alt="changble image" width="100%" height="300px">
+
+            <!-- to  change image each 5 second -->
         <script>
             let images = ["https://lacasa-egy.com/_next/static/images/wedding-season-98c52cf1982a2e75b5bf310ab366ac87.jpg", "https://cdn.almowafir.com/1/%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D9%85%D8%B7%D8%A8%D8%AE.jpg", "https://kianegypt.com/cdn/shop/files/Kian_Furniture_-_Cover.jpg?v=1691510239",
                 "https://cdn.salla.sa/RxKan/23786ce8-2f81-4b6c-86b6-0f5d9c1ade54-1000x312.5-3DREM3Dr4IsEBVtkUg8GjOdmtxqUt2MT3SWy3bO1.png",
@@ -61,9 +63,9 @@
 
 
 
-        <nav class="navbar">
+        <nav class="sections">
 
-            <a href="#electronics">Electronics</a>
+            <a href="#ECMA Electro.html">Electronics</a>
             <a href="fashion.html">Fashion</a>
             <a href="#food">food</a>
             <a href="#furniture">Furniture</a>
@@ -83,6 +85,7 @@
                         src="https://iinkor.com/wp-content/uploads/2024/03/post-44.jpg" alt="Furniture Banner"
                         width="100%" height="300px"></a></div>
             <div class="product-carousel">
+
                 <div class="product" data-name="sofa">
                     <img src="images/sofa.jpg" alt="Sofa">
                     <h3>Sofa</h3>
@@ -143,8 +146,7 @@
                     <img src="images/dining_set.jpg" alt="Dining Set">
                     <h3>Dining Set</h3>
                     <p>$599.99</p>
-                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to
-                            Cart</i></button>
+                    <button class="cart-btn" onclick="addToCart('summmer-T-shirts1', 3000, 'fashionq7')"><i>Add to Cart</i></button>
                     <input type="number" id="foodq1" value="1" min="1">
                 </div>
 
@@ -156,7 +158,7 @@
         </section>
         <section id="electronics">
             <div class="banner"></div>
-            <a target="_blank" href="electronic.html"><img
+            <a target="_blank" href="ECMA Electro.html"><img
                     src="https://cdn.salla.sa/form-builder/ekdxVuB0MDI8f6OPtvbImzkvt1FDiPLI2cOhPKB8.png"
                     alt="Electronics Banner" width="100%" height="300px"></a>
             </div>
@@ -226,7 +228,7 @@
                 </div>
             </div>
 
-            <a href="electronic.html">
+            <a href="ECMA Electro.html">
                 <h2 style="text-align:center"><i><strong>shop now</strong></i></h2>
             </a>
 
@@ -237,23 +239,20 @@
             <div class="product-carousel">
 
                 <div class="product" data-name="prime rib steak">
-                    <a href="food.html#Prime-Rib-Steak"><img src="resturant_images/primerib-steak.jpg"
-                            alt="Prime Rib Steak" /></a>
+                    <a href="food.html#Prime-Rib-Steak"><img src="resturant_images/primerib-steak.jpg" alt="Prime Rib Steak" /></a>
                     <h3>Prime Rib Steak</h3>
                     <p>Grilled prime rib steak served with vegetables and dipping sauce.</p>
                     <button class="cart-btn" onclick="addToCart('Prime Rib Steak', 3000, 'fo1')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo1" value="1" min="1">
+                    <input class="add"type="number" id="fo1" value="1" min="1">
                 </div>
 
 
                 <div class="product" data-name="grilled combo">
-                    <a href="food.html#Grilled-Combo"><img src="resturant_images/images-4-9.jpg"
-                            alt="Grilled Combo" /></a>
+                    <a href="food.html#Grilled-Combo"><img src="resturant_images/images-4-9.jpg" alt="Grilled Combo" /></a>
                     <h3>Grilled Combo</h3>
                     <p>Delicious mix of grilled chicken and lamb with salad and bread.</p>
                     <button class="cart-btn" onclick="addToCart('grilled combo', 3000, 'fo2')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo2" value="1" min="1">
-
+                    <input class="add"type="number" id="fo2" value="1" min="1">
                 </div>
 
 
@@ -262,27 +261,25 @@
                     <h3>Mixed Grill</h3>
                     <p>An assortment of charcoal-grilled meat and chicken served with appetizers.</p>
                     <button class="cart-btn" onclick="addToCart('Mixed Grill', 3000, 'fo3')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo3" value="1" min="1">
+                    <input class="add"type="number" id="fo3" value="1" min="1">
                 </div>
 
 
                 <div class="product" data-name="kofta" id="food-item">
-                    <a href="food.html#Kofta-Mix"><img src="resturant_images/kuftalambchickenlampgreen.webp"
-                            alt="Kofta Mix" /> </a>
+                    <a href="food.html#Kofta-Mix"><img src="resturant_images/kuftalambchickenlampgreen.webp" alt="Kofta Mix" /> </a>
                     <h3>Kofta Mix</h3>
                     <p>Charcoal-grilled lamb and chicken kofta with fresh herbs and sauces.</p>
                     <button class="cart-btn" onclick="addToCart('Kofta Mix', 3000, 'fo4')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo4" value="1" min="1">
+                    <input class="add"type="number" id="fo4" value="1" min="1">
                 </div>
 
 
                 <div class="product" data-name="margherita pizza">
-                    <a href="food.html#Margherita-Pizza"><img
-                            src="resturant_images/photo-1574071318508-1cdbab80d002.jfif" alt="Margherita Pizza" /> </a>
+                    <a href="food.html#Margherita-Pizza"><img src="resturant_images/photo-1574071318508-1cdbab80d002.jfif" alt="Margherita Pizza" /> </a>
                     <h3>Margherita Pizza</h3>
                     <p>A traditional Italian pizza with mozzarella cheese and our special sauce.</p>
                     <button class="cart-btn" onclick="addToCart('margherita pizza', 3000, 'fo5')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo5" value="1" min="1">
+                    <input class="add"type="number" id="fo5" value="1" min="1">
                 </div>
 
 
@@ -291,7 +288,7 @@
                     <h3>Chicken Kabsa</h3>
                     <p>A special Gulf dish with seasoned chicken and basmati rice.</p>
                     <button class="cart-btn" onclick="addToCart('Chicken Kabsa', 3000, 'fo6')"><i>Add to Cart</i></button>
-                    <input id="add" type="number" id="fo6" value="1" min="1">
+                    <input class="add"type="number" id="fo6" value="1" min="1">
                 </div>
 
 
@@ -304,7 +301,7 @@
 
 
 
-            <button class="more" onclick="toggleMore()">more</button>
+                                    <button class="more"   onclick="toggleMore()">more</button>
 
 
             <section id="fashion" style="display:none">
@@ -312,98 +309,76 @@
                 <div class="product-carousel">
                     <div class="product" data-name="shirt">
                         <a href="fashion.html#wintercloth1"><img src="fashion_images/OIP (1)-1.jpeg" class="ima1">
-
-                            <h3>winterclothes</h3>
-
-                            <p>4000 pound</p>
+                        <h3>winterclothes</h3>
+                        <p>4000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('winterclothes1', 4000, 'fash1')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash1" value="1" min="1">
+                        <input class="add"type="number" id="fash1" value="1" min="1">
                     </div>
                     <div class="product" data-name="dress">
                         <a href="fashion.html#wintercloth2"><img src="fashion_images/l2ktK5cwX1as6lqOdg8Arnz1iNwcfowNrxL3zFft.jpg" class="ima1">
-
                             <h3>winterclothes</h3>
-
                             <p>4000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('winterclothes2', 4000, 'fash2')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash2" value="1" min="1">
+                        <input class="add"type="number" id="fash2" value="1" min="1">
                     </div>
                     <div class="product" data-name="jacket">
                         <a href="fashion.html#wintercloth3"><img src="fashion_images/1.jpg" class="ima1">
-
                             <h3>winterclothes</h3>
-
                             <p>4000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('winterclothes3', 4000, 'fash3')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash3" value="1" min="1">
+                        <input class="add"type="number" id="fash3" value="1" min="1">
                     </div>
                     <div class="product" data-name="bag">
                         <a href="fashion.html#shirt1"><img src="fashion_images/eevJGWKBwgqQh9J9dH4GBefJ26vAJdLmv62gfDDX.jpg" class="image-shirt">
-
                             <h3>men's shirts</h3>
-
                             <p>2000 pound</p>
                         </a>
 
                         <button onclick="addToCart(' men s shirts1', 2000, 'fash4')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash4" value="1" min="1">
+                        <input class="add"type="number" id="fash4" value="1" min="1">
                     </div>
                     <div class="product" data-name="shoes">
                         <a href="fashion.html#shirt2"><img src="fashion_images/images (1).jpeg" class="image-shirt">
-
                             <h3>men's shirts</h3>
-
                             <p>2000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('men s shirts2', 2000, 'fash5')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash5" value="1" min="1">
+                        <input class="add" type="number" id="fash5" value="1" min="1">
                     </div>
                     <div class="product" data-name="sweater">
                         <a href="fashion.html#shirt3"><img src="fashion_images/OIP (1).jpeg" class="image-shirt">
-
                             <h3>men's shirts</h3>
-
                             <p>2000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('men s shirts3', 2000, 'fash6')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash6" value="1" min="1">
+                        <input class="add"type="number" id="fash6" value="1" min="1">
                     </div>
-                    <div class="product" data-name="pants">
-                        <a href="fashion.html#summmer-T-shirts1"><img src="fashion_images/R.jpeg"
-                                class="image-summmer-T-shirts">
-
+                    <div class="product" data-name="shirt">
+                        <a href="fashion.html#summmer-T-shirts1"><img src="fashion_images/R.jpeg"class="image-summmer-T-shirts">
                             <h3>men's shirts</h3>
-
                             <p>3000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('men s shirts4', 3000, 'fash7')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash7" value="1" min="1">
+                        <input class="add" type="number" id="fash7" value="1" min="1">
                     </div>
-                    <div class="product" data-name="hat">
-                        <a href="fashion.html#summmer-T-shirts2"><img src="fashion_images/2.jpg"
-                                class="image-summmer-T-shirts">
-
+                    <div class="product" data-name="shirt">
+                        <a href="fashion.html#summmer-T-shirts2"><img src="fashion_images/2.jpg" class="image-summmer-T-shirts">
                             <h3>men's shirts</h3>
-
                             <p>3000 pound</p>
                         </a>
                         <button class="cart-btn" onclick="addToCart('men s shirts5', 3000, 'fash8')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash8" value="1" min="1">
+                        <input class="add"type="number" id="fash8" value="1" min="1">
                     </div>
-                    <div class="product" data-name="scarf">
-                        <a href="fashion.html#summmer-T-shirts3"><img src="fashion_images/1-1.jpg"
-                                class="image-summmer-T-shirts1">
-
+                    <div class="product" data-name="shirt">
+                        <a href="fashion.html#summmer-T-shirts3"><img src="fashion_images/1-1.jpg" class="image-summmer-T-shirts1">
                             <h3>men's shirts</h3>
-
                             <p>3000 pound</p>
                         </a>
-
                         <button class="cart-btn" onclick="addToCart('men s shirts6', 3000, 'fash9')"><i>Add to Cart</i></button>
-                        <input id="add" type="number" id="fash9" value="1" min="1">
+                        <input  class="add"type="number" id="fash9" value="1" min="1">
                     </div>
                 </div>
                 <a href="fashion.html">
@@ -460,31 +435,25 @@
     </script>
 
 
-    <script>/* hiden section */
+    <script>/* hiden section  fashion section  create  variable called more  taks id (fashion) if it is none make it inline and oposite */
         function toggleMore() {
+                const more = document.getElementById("fashion");
+                const moreText = document.getElementById("moreText");
 
-            const moreText = document.getElementById("fashion");
-            const btnText = document.getElementById("Button");
-
-            if (moreText.style.display === "none") {
-                moreText.style.display = "inline";
-                dots.style.display = "none";
-                btnText.textContent = "أقل";
-            } else {
+                if (more.style.display === "none") {
+                more.style.display = "inline";
                 moreText.style.display = "none";
-                dots.style.display = "inline";
-                btnText.textContent = "المزيد";
-            }
-        }
+                } else {
+                more.style.display = "none";
+                moreText.style.display = "inline";
+                }
+
     </script>
 
     
-<<<<<<< HEAD
-=======
     
 
->>>>>>> f49c928d3845e4263b93b494ea1fa398d0469538
-
+<script src="cart.js"></script>
 
 </body>
 

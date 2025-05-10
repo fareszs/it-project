@@ -6,17 +6,17 @@ body {
     /*#808589*/
     color: #333;
 }
-
+/*#808589*/
 header {
     height: auto;
-    background-color: #808589;
+    background-color:#808589;
     /*#808589*/
 
 
 
 }
 
-.navbar {
+.sections {
     width: auto;
     text-align: center;
     height: auto;
@@ -29,7 +29,7 @@ header {
 
 a {
     text-decoration: none;
-    target: _blank;
+ 
 
 }
 
@@ -45,9 +45,7 @@ button {
 }
 
 
-.signin,
-.signup,
-.card {
+.signin,.signup,.card {
     width: 10%;
     white-space: nowrap;
     padding-top: 6px;
@@ -111,7 +109,7 @@ input {
     border: #ff3103 solid 2px
 }
 
-.navbar>a:hover {
+.sections>a:hover {
     color: #ff3103;
 
     border-radius: 5px;
@@ -224,10 +222,8 @@ h2:hover {
 }
 .more{
     width:100%;
-
-
 }
-#add{
+.add{
    
     display: block;
     margin: 0 auto;
