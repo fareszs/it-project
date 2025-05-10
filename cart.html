@@ -1,9 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3">
     <title>Delivery & Shipping</title>
     <style> 
         body {
@@ -169,6 +166,11 @@
             justify-content: space-between;
             align-items: center;
         }
+        
+        /* Error alert message */
+        .alert-message.error {
+            background-color: #E57373;
+        }
     </style>
 </head>
 <body>
@@ -207,13 +209,23 @@
     </div>
 
     <script>
-        // Show items when page loaded
         document.addEventListener('DOMContentLoaded', function() {
             displayCartItems();
         });
         
         function showCheckoutAlert() {
             const alertMessage = document.getElementById('alertMessage');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            // Check 
+            if (cart.length === 0) {
+                alertMessage.textContent = "There is No Product chosen, Please Select Products";
+                alertMessage.classList.add('error'); // error
+            } else {
+                alertMessage.textContent = "Products Will Send To You In Few Hours";
+                alertMessage.classList.remove('error'); 
+            }
+            
             alertMessage.classList.add('show');
             setTimeout(function() {
                 alertMessage.classList.remove('show');
@@ -271,4 +283,4 @@
         }
     </script>
 </body>
-</html>    
+</html>
