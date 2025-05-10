@@ -301,7 +301,7 @@
 
 
 
-            <button class="more" onclick="toggleMore()">more</button>
+                                    <button class="more"   onclick="toggleMore()">more</button>
 
 
             <section id="fashion" style="display:none">
@@ -435,22 +435,19 @@
     </script>
 
 
-    <script>/* hiden section  fashion section  */
+    <script>/* hiden section  fashion section  create  variable called more  taks id (fashion) if it is none make it inline and oposite */
         function toggleMore() {
+                const more = document.getElementById("fashion");
+                const moreText = document.getElementById("moreText");
 
-            const moreText = document.getElementById("fashion");
-           
-
-            if (moreText.style.display === "none") {
-                moreText.style.display = "inline";
-               
-             
-            } else {
+                if (more.style.display === "none") {
+                more.style.display = "inline";
                 moreText.style.display = "none";
-              
-               
-            }
-        }
+                } else {
+                more.style.display = "none";
+                moreText.style.display = "inline";
+                }
+
     </script>
 
     

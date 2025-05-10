@@ -6,10 +6,10 @@ body {
     /*#808589*/
     color: #333;
 }
-
+/*#808589*/
 header {
     height: auto;
-    background-color: #808589;
+    background-color:#808589;
     /*#808589*/
 
 
@@ -29,7 +29,7 @@ header {
 
 a {
     text-decoration: none;
-    target: _blank;
+ 
 
 }
 
@@ -222,8 +222,6 @@ h2:hover {
 }
 .more{
     width:100%;
-
-
 }
 .add{
    
