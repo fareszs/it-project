@@ -232,8 +232,12 @@ h2:hover {
 
 
 }
-
-
+.product:hover {
+      transform: scale(1.05);
+      border: 3px solid #ff3103;
+      border-radius: 15px;
+      
+    }
 
 
 
