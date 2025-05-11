@@ -163,7 +163,7 @@ h2:hover {
     font-size: 80px;
 }
 
-.product-carousel {
+.parent {
     display: flex;
     overflow-x: auto;
     gap: 10px;
