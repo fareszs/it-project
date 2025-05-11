@@ -49,7 +49,14 @@
       object-fit: cover;
       border-radius: 10px;
     }
-
+  .cart-btn {
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     .product h3 {
       margin: 10px 0 5px;
       color: #4b0082;
@@ -77,67 +84,88 @@
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.52.38_79658689.jpg" alt="Modern Sofa" />
       <h3>Modern Sofa</h3>
       <p>Price: 14,352 EGP</p>
+      <button class="cart-btn" onclick="addToCart('Modern Sofa', 14.352, 'furn1')">Add to Cart</button>
+      <input type="number" id="furn1" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.12_081f0e1e.jpg" alt="Stylish Armchair" />
       <h3>Stylish Armchair</h3>
       <p>Price: 7,152 EGP</p>
+       <button class="cart-btn" onclick="addToCart('Stylish Armchair', 7152, 'furn2')">Add to Cart</button>
+      <input type="number" id="furn2" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.13_5536cfe5.jpg" alt="Round Coffee Table" />
       <h3>Round Coffee Table</h3>
       <p>Price: 4,752 EGP</p>
+         <button class="cart-btn" onclick="addToCart('Round Coffee Table', 4752 , 'furn3')">Add to Cart</button>
+      <input type="number" id="furn3" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.12_32575fa3.jpg" alt="Double Bed" />
       <h3> Bed</h3>
       <p>Price: 19,152 EGP</p>
+         <button class="cart-btn" onclick="addToCart(' Bed', 19152, 'furn4')">Add to Cart</button>
+      <input type="number" id="furn4" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.52.39_63d1ff83.jpg" alt="Wooden Desk" />
       <h3>Wooden Desk</h3>
       <p>Price: 9,552 EGP</p>
+      <button class="cart-btn" onclick="addToCart('Wooden Desk',9552,'furnq5')">Add to Cart</button>
+      <input type="number" id="furnq5" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.14_2d4ca828.jpg" alt="TV Cabinet" />
       <h3>TV Cabinet</h3>
       <p>Price: 10,800 EGP</p>
+         <button class="cart-btn" onclick="addToCart('TV Cabinet',  10800, 'furn6')">Add to Cart</button>
+      <input type="number" id="furn6" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.14_2d4ca828.jpg" alt="Closet" />
       <h3>Closet</h3>
       <p>Price: 15,840 EGP</p>
+         <button class="cart-btn" onclick="addToCart('Closet', 15840, 'furn7')">Add to Cart</button>
+      <input type="number" id="furn7" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.14_824808ce.jpg" alt="Bookshelf" />
       <h3>Bookshelf</h3>
       <p>Price: 6,000 EGP</p>
+         <button class="cart-btn" onclick="addToCart('Bookshelf', 6000, 'furn8')">Add to Cart</button>
+      <input type="number" id="furn8" value="1" min="1">
     </div>
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.14_5787cd2e.jpg" alt="Dining Table" />
       <h3>Dining Table</h3>
       <p>Price: 13,200 EGP</p>
+         <button class="cart-btn" onclick="addToCart('Dining Table', 13200, 'furn9')">Add to Cart</button>
+      <input type="number" id="furn9" value="1" min="1">
     </div>
+
 
     <div class="product">
       <img src="furniture_images/صورة واتساب بتاريخ 1446-11-12 في 21.49.14_5087b276.jpg" alt="Corner Seat" />
       <h3>Corner Seat</h3>
       <p>Price: 7,632 EGP</p>
+         <button class="cart-btn" onclick="addToCart('Corner Seat', 7632, 'furn10')">Add to Cart</button>
+      <input type="number" id="furn10" value="1" min="1">
     </div>
   </section>
 
   <footer>
     &copy; 2025 Ecma. All rights reserved.
   </footer>
-
+<script src="cart.js"></script>
 </body>
 </html>
 
