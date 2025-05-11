@@ -21,34 +21,42 @@
                         <img src="iphone.jpeg" height="270px" alt="Phone picture">
                     </div>
                     <p>This smartphone features a high-quality camera, long-lasting battery, and fast charging capabilities.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <p>Price: 54,800 EGP</p>
+                   <button class="cart-btn" onclick="addToCart('IPHONE 13', 54800, 'epq1')">Add to Cart</button>
+                    <input type="number" id="epq1" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>OPPO A18</h2>
                     <div class="image">
                         <img src="oppo.jpg" height="270px" alt="Phone picture">
+                         <p>Price: 18,000 EGP</p>
                     </div>
                     <p>Equipped with a powerful processor, OLED display, and fast charging for seamless performance.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                   <button class="cart-btn" onclick="addToCart('OPPO A18', 18000, 'epq2')">Add to Cart</button>
+                    <input type="number" id="epq2" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>Samsung A53</h2>
                     <div class="image">
                         <img src="samsung.jpeg" height="270px" alt="Phone picture">
+                         <p>Price: 26,200 EGP</p>
                     </div>
                     <p>Featuring an excellent camera setup and smooth user experience, perfect for media and daily tasks.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                   <button class="cart-btn" onclick="addToCart('Samsung A53', 26200, 'epq3')">Add to Cart</button>
+                    <input type="number" id="epq3" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>MI 13</h2>
                     <div class="image">
                         <img src="redmi.jpeg" height="270px" alt="Phone picture">
+                         <p>Price: 14,500 EGP</p>
                     </div>
                     <p>Enjoy amazing features like a large battery, fast processing, and stunning display with this smartphone.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                   <button class="cart-btn" onclick="addToCart('MI 13', 14500, 'epq4')">Add to Cart</button>
+                    <input type="number" id="epq4" value="1" min="1">
                 </div>
             </div>
         </div>
@@ -104,5 +112,6 @@ document.querySelector(".search-bar input").addEventListener("keypress", functio
     }
 });
     </script>
+    <script src="../cart.js"></script>
 </body>
 </html>

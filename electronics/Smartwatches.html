@@ -19,36 +19,44 @@
                     <h2>Digitplus D60</h2>
                     <div class="image">
                         <img src="2022_08_1660513260.webp" height="270px" alt="Smartwatch picture">
+                         <p>Price: 8,500 EGP</p>
                     </div>
                     <p>This smartwatch features a sleek design, heart rate monitor, and step counter, ideal for fitness tracking.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <button class="cart-btn" onclick="addToCart('Digitplus D60', 8500, 'ewq1')">Add to Cart</button>
+                    <input type="number" id="ewq1" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>L8 ULTRA MAX</h2>
                     <div class="image">
                         <img src="90188AP01_1.webp" alt="Smartwatch picture">
+                         <p>Price: 6,200 EGP</p>
                     </div>
                     <p>With a stylish design and enhanced health features, this smartwatch supports notifications, heart rate, and fitness tracking.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <button class="cart-btn" onclick="addToCart('L8 ULTRA MAX', 6200, 'ewq2')">Add to Cart</button>
+                    <input type="number" id="ewq2" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>FW05 GTR</h2>
                     <div class="image">
                         <img src="bT9cYCWSm3HDVmBmXdZtKj-1200-80.jpg" height="270px" alt="Smartwatch picture">
+                         <p>Price: 3,700 EGP</p>
                     </div>
                     <p>This smartwatch is perfect for those who want to track their fitness and receive notifications on the go.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <button class="cart-btn" onclick="addToCart('FW05 GTR', 3700, 'ewq3')">Add to Cart</button>
+                    <input type="number" id="ewq3" value="1" min="1">
                 </div>
 
                 <div class="product">
                     <h2>GALAXY WATCH 7</h2>
                     <div class="image">
                         <img src="Smartwatch 5.jpeg" height="270px" alt="Smartwatch picture">
+                         <p>Price: 14,100 EGP</p>
                     </div>
                     <p>Featuring a large display, this smartwatch tracks your steps, heart rate, and allows you to stay connected with smart notifications.</p>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <button class="cart-btn" onclick="addToCart('GALAXY WATCH 7', 14100, 'ewq4')">Add to Cart</button>
+                    <input type="number" id="ewq4" value="1" min="1">
                 </div>
             </div>
         </div>
@@ -106,5 +114,6 @@ document.querySelector(".search-bar input").addEventListener("keypress", functio
     }
 });
     </script>
+    <script src="../cart.js"></script>
 </body>
 </html>
