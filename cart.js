@@ -68,14 +68,4 @@ function displayCartItems() {
     grandTotalElement.textContent = `$${grandTotal.toFixed(2)}`;
 }
 
-// Switch between pages
-function showDeliveryPage() {
-    document.getElementById('productsPage').style.display = 'none';
-    document.getElementById('deliveryPage').style.display = 'block';
-    displayCartItems();
-}
 
-function showProductsPage() {
-    document.getElementById('productsPage').style.display = 'block';
-    document.getElementById('deliveryPage').style.display = 'none';
-}
